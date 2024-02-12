@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(48, 173, 180, 0.525);
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+
+
+
+
+
+/* LA FORMA MAS SENCILLA PARA ORGANIZAR LAS GRILLAS ES= 
+EN EL CONTENEDOR PRINCIPAL SE CREA UNA (grid) Y DDEPENDIENDO LA  CANTIDAD DE COLUMNAS Y GRILLAS QUE TENGAMOS HACEMOS EL ORDEN SOLAMENTE LLAMANDO A LA CLASE EN EL ORDEN QUE QUEREMOS EN PANTALLA EJEMPLO:
+ grid-template-areas (header header header)ESTO HACE QUE COMO EN ESTE VISUAL TENEMOS 3 COLUMNAS PONIENDOLO 3 VECES VA A OCUPAR TODO EL ESPACIO DE LA PANTALLA */
+}
+.contenedorpr{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+   /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);*/
+    grid-template-areas: "header header header "
+    "contenido contenido sidebar"  "w1 w2 sidebar" 
+    ;
+}
+.cabeza {
+    background-color:darkcyan;
+    color: aliceblue;
+   
+    grid-area: header;
+
+
+}
+.contenido {
+
+grid-column: span 2;
+grid-area: contenido;
+
+}
+#tit {
+    background-color: darkcyan;
+
+}
+.w1, .w2 {
+    background-color: darkcyan;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar {
+  
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar;
+
+}
+.footer {
+    background-color:darkcyan;
+   grid-column: 1/4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* PARA QUE OCUPE TODO EL ESPACIO SE PUEDE REALIZAR COMO ARRIBA O
+   grid-column: span (la cantidad de espacios que quiere romper) */
+
+}
+/*  PARA que sea responsivo 
+@media  screen and  (max-width: 1000px) {
+    body{
+        background-color: rgba(91, 43, 136, 0.226);
+    }
+}
+@media  screen and  (min-width: 1000px) {
+    body{
+        background-color: rgba(48, 173, 180, 0.525);
+    }
+}
+ */
+
+
+.cabeza .contenedorpr .contenido .footer .sidebar .widget1 .widget2 {
+    padding: 20px;
+    border-radius: 15px;
+}
+

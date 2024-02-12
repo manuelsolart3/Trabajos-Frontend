@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Profesores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Búsqueda de Profesores</h1>
+
+    <div class="filtro">
+        <label for="nombreProfesor">Nombre del Profesor:</label>
+        <select name="nombre" id="nombre">
+            <option value="">-- Seleccione --</option>
+        </select>
+    </div>
+
+    <div class="filtro">
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia">
+            <option value="">-- Seleccione --</option>
+       
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+    </div>
+
+    <div class="filtro">
+        <label for="tema">Tema:</label>
+        <select id="tema" name="tema">
+            <option value="">-- Seleccione --</option>
+        </select>
+    </div>
+
+    <div class="filtro">
+        <label for="modalidad">Modalidad:</label>
+        <select id="modalidad" name="modalidad">
+            <option value="">-- Seleccione --</option>
+        </select>
+    </div>
+
+    <div class="filtro">
+        <label for="calificacion">Calificación:</label>
+        <select id="calificacion" name="calificacion" aria-placeholder="selec">}
+            <option value="">-- Seleccione --</option>
+        </select>
+    </div>
+
+    <div class="filtro">
+        <label for="jornada">Jornada:</label>
+        <select id="jornada" name="jornada">
+            <option value="">-- Seleccione --</option>
+        </select>
+    </div>
+
+    <button type="button" id="buscarBtn">Buscar</button>
+
+    <div id="resultados">
+     <h1 class="sub">Resultados Encontrados</h1>
+    </div>
+
+    <script src="buscador.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <CENTER>
+        <H1>Registro</H1>
+        <img src="imagenes/foto.jpg" width="200"><br>
+        <table border>
+            <form action="">
+                <TR>
+                    <Td>
+                        Tipo de ID
+                        <input type="list" list="Tipo">
+                        <datalist id="Tipo">
+                            <option value="C.C"></option>
+                            <option value="T.I"></option>
+                            <option value="C.E"></option><br>
+                            <p>
+                    </Td>
+                </TR>
+                <tr>
+                    <td>Numero
+                        <input type="number" required maxlength="10" minlength="7">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nombre
+                        <input type="text" required>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apellidos
+                        <input type="text">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Correo
+                        <input type="mail"><br>
+
+                        <label>Sexo</label>
+                        <select name="sexo" id="sex">
+                            <option>M</option>
+                            <option>F</option>
+                            <option>D</option>
+                        </select>
+
+                <tr>
+                    <td>Fecha de nacimiento
+                        <input type="date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <center>
+                            Color <input type="color">
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            Foto <input type="file">
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            Contraseña <input type="password" required minlength="3" maxlength="8">
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            repite Contraseña <input type="password" required minlength="3" maxlength="8">
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+
+                            <input type="submit"> <input type="reset">
+                        </center>
+                    </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </datalist>
+        </table>
+    </CENTER>
+    </form>
+</body>
+
+</html>

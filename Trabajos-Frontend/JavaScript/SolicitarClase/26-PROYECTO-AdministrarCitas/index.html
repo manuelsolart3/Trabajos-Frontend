@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2 class="text-center my-5 titulo">SOLICITAR CLASE</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-solicitud">
+                <form id="nueva-solicitud">
+<legend class="mb-4">Datos de la solicitud</legend>
+
+
+
+<div class="form-group row">
+    <label class="col-sm-4 col-lg-4 col-form-label">Nombre:</label>
+     <div class="col-sm-8 col-lg-8">
+          <input type="text" id="Nombre" name="Nombre" class="form-control" placeholder="Nombre Del Solicitante">
+                        </div>
+ </div>
+ <div class="form-group row">
+       <label class="col-sm-4 col-lg-4 col-form-label">Materia:</label>
+     <div class="col-sm-8 col-lg-8">
+         <input type="text" id="Materia" name="Materia" class="form-control"  placeholder="Materia soliocitada">
+     </div>
+ </div>
+ <div class="form-group row">
+     <label class="col-sm-4 col-lg-4 col-form-label">Tema:</label>
+     <div class="col-sm-8 col-lg-8">
+         <input type="tel" id="Tema" name="Tema" class="form-control"  placeholder="Tema solicitado">
+     </div>
+ </div>
+ <div class="form-group row">
+     <label class="col-sm-4 col-lg-4 col-form-label">Fecha De Clase:</label>
+     <div class="col-sm-8 col-lg-8">
+         <input type="date" id="fecha" name="fecha" class="form-control">
+     </div>
+    </div>
+  <div class="form-group row">
+      <label class="col-sm-4 col-lg-4 col-form-label">Hora De Clase:</label>
+      <div class="col-sm-8 col-lg-8">
+          <input type="time" id="hora" name="hora" class="form-control">
+      </div>
+   </div>
+
+   <div class="form-group row">
+    <label class="col-sm-4 col-lg-4 col-form-label">Modalidad:</label>
+<select class="col-sm-8 col-lg-7" id="Modalidad"  name="Modalidad">
+    <option >seleccionar</option>
+    <option id="Presencial">Presencial</option>
+    <option id="Virtual">Virtual</option>
+</select>
+   </div>
+
+
+   <div class="form-group row">
+    <label class="col-sm-4 col-lg-4 col-form-label">Metodo De Pago:</label>
+<select class="col-sm-8 col-lg-7" id="MetodoP" name="MetodoP">
+    <option >seleccionar</option>
+    <option id="Efectivo">Efectivo</option>
+    <option id="Tarjeta">Tarjeta De Credito</option>
+</select>
+   </div>
+
+
+   <div class="form-group row">
+    <label class="col-sm-4 col-lg-4 col-form-label">Valor Propuesto:</label>
+    <div class="col-sm-8 col-lg-8">
+        <input type="tel" id="Valor" name="Valor" class="form-control" placeholder="Valor Sugerido">
+    </div>
+ </div>
+
+ <div class="form-group row">
+    <label class="col-sm-4 col-lg-4 col-form-label">Imagen:</label>
+    <div class="col-sm-8 col-lg-8">
+<input type="file" id="Imagen" name="Imagen" accept="image/*">
+</div>
+</div>
+
+
+                    <div class="form-group"> <button type="submit" class="btn btn-success w-100 d-block">Solicitar Clase</button  
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4">Administra tus Solicitudes</h2>
+                <ul id="citas"  class="list-group lista-citas"></ul>
+            </div>
+        </div> <!--.row-->
+    </div><!--.container-->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

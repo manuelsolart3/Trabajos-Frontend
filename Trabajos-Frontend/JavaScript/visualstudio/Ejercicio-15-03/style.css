@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(76, 142, 146, 0.525);
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+.contp {
+    width: 100%;
+   
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "cz cz cz" 
+                         "co co sb"
+                         "co co sb"
+                         "w1 w2 sb"
+                        "w3 w4 sb"
+                         "f f f";
+    
+}
+.cz {
+height: 200px;
+    background-color: rgb(40, 79, 114);
+    color: azure;
+    grid-area: cz;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+.co {
+    grid-area: co;
+   
+
+}
+
+.sb {
+    grid-area: sb;
+}
+.w1 {
+    
+    grid-area: w1;
+}
+.w2 {
+    grid-area: w2;
+}
+.w3 {
+    grid-area: w3;
+}
+.w4 {
+    grid-area: w4;
+}
+
+.f {
+    grid-area: f;
+}
+.img {
+    width: 450px;
+}
+.f {
+
+    margin-top: 15px;
+    height: 65px;
+    background-color: rgb(40, 79, 114);
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    color: aliceblue;
+    
+}
+
+  
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+ 
+ 
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin-right: 80px;
+  }
+   
+  .menu a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .menu a span {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  
+ 
+  
+  .menu a:hover span:first-child {
+    transform: translateY(100%);
+  }
+  
+  
